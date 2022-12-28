@@ -7,6 +7,8 @@ local conf = require('telescope.config').values
 
 local Job = require('plenary.job')
 
+local generate_ascii = require('generate_ascii')
+
 local M = {}
 
 local fonts = {}
@@ -27,21 +29,6 @@ M.setup = function()
     end,
   })
   job:sync()
-end
-
-local generate_ascii = function(text, font, callback)
-  local job = Job:new({
-    command = 'figlet',
-    args = { '-f', font, text },
-    on_exit = function(result, return_val)
-      if return_val ~= 0 then
-        error('`figlet` could not run successfully')
-      end
-      local output = result:result()
-      callback(output)
-    end,
-  })
-  job:start()
 end
 
 M.open = function()
