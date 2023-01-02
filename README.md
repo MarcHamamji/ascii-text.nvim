@@ -18,6 +18,10 @@ A Neovim plugin to generate ASCII text using `figlet`
   Using [packer](https://github.com/wbthomason/packer.nvim):
 
   ```lua
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { 'nvim-lua/plenary.nvim' }
+  }
   use { 'MarcHamamji/ascii-text.nvim' }
   ```
 
