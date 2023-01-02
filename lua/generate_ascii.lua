@@ -69,8 +69,7 @@ local generate_args = function(options, text)
 end
 
 local generate_ascii = function(text, options, callback)
-  -- print('GOT OPTIONS', vim.inspect(options))
-  print('Command: figlet ' .. table.concat(generate_args(options, text), ' '))
+  -- print('Command: figlet ' .. table.concat(generate_args(options, text), ' '))
   local job = Job:new({
     command = 'figlet',
     args = generate_args(options, text),
