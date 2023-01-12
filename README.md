@@ -13,7 +13,7 @@ A Neovim plugin to generate ASCII text using `figlet`
 - [Usage](#usage)
 - [Configuration](#configuration)
 
-### Installation
+## Installation
 
   Using [packer](https://github.com/wbthomason/packer.nvim):
 
@@ -25,7 +25,7 @@ A Neovim plugin to generate ASCII text using `figlet`
   use { 'MarcHamamji/ascii-text.nvim' }
   ```
 
-### Setup
+## Setup
 
   ```lua
   require('ascii-text').setup {
@@ -35,7 +35,7 @@ A Neovim plugin to generate ASCII text using `figlet`
 
   This [configuration](#configuration)  will be passed to the `open` method, when called with no arguments.
 
-### Usage
+## Usage
 
   ```lua
   require('ascii-text').open {
@@ -43,7 +43,7 @@ A Neovim plugin to generate ASCII text using `figlet`
   }
   ```
 
-### Configuration
+## Configuration
 
   | Field | Description | Available Values | Default |
   |---------------- | --------------- | --------------- | --------------- |
