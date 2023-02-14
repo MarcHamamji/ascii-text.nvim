@@ -30,7 +30,7 @@ M.setup = function(opts)
       end
     end,
   })
-  job:sync()
+  job:start()
 end
 
 M.open = function(opts)
